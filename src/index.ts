@@ -2,9 +2,7 @@ import { registerPlugin } from '@capacitor/core';
 
 import type { OcrPlugin } from './definitions';
 
-const Ocr = registerPlugin<OcrPlugin>('Ocr', {
-  web: () => import('./web').then((m) => new m.OcrWeb()),
-});
+const Ocr = registerPlugin<OcrPlugin>('Ocr');
 
 export * from './definitions';
 export { Ocr };
