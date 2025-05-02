@@ -54,14 +54,14 @@ Only file urls (as the ones returned by Camera plugin) are supported at the mome
 
 | Prop          | Type                             | Description              | Since |
 | ------------- | -------------------------------- | ------------------------ | ----- |
-| **`results`** | <code>RecognitionResult[]</code> | List of recognized texts | 1.0.0 |
+| **`results`** | <code>RecognitionResult[]</code> | List of recognized texts | 0.0.1 |
 
 
 #### RecognitionResult
 
 | Prop             | Type                | Description                            | Since |
 | ---------------- | ------------------- | -------------------------------------- | ----- |
-| **`text`**       | <code>string</code> | The recognized text.                   | 1.0.0 |
-| **`confidence`** | <code>number</code> | The confidence of the recognized text. | 1.0.0 |
+| **`text`**       | <code>string</code> | The recognized text.                   | 0.0.1 |
+| **`confidence`** | <code>number</code> | The confidence of the recognized text. | 0.0.1 |
 
 </docgen-api>

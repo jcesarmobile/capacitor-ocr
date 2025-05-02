@@ -2,7 +2,7 @@ export interface RecognitionResults {
   /**
    * List of recognized texts
    *
-   * @since 1.0.0
+   * @since 0.0.1
    */
   results: RecognitionResult[];
 }
@@ -11,13 +11,13 @@ export interface RecognitionResult {
   /**
    * The recognized text.
    *
-   * @since 1.0.0
+   * @since 0.0.1
    */
   text: string;
   /**
    * The confidence of the recognized text.
    *
-   * @since 1.0.0
+   * @since 0.0.1
    */
   confidence: number;
 }
