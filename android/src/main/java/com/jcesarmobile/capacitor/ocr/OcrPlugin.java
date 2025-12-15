@@ -25,7 +25,7 @@ public class OcrPlugin extends Plugin {
             InputImage image = InputImage.fromFilePath(getContext(), Uri.parse(imageString));
             recognizer
                 .process(image)
-                .addOnSuccessListener(visionText -> {
+                .addOnSuccessListener((visionText) -> {
                     var resultsArray = new JSArray();
                     for (Text.TextBlock block : visionText.getTextBlocks()) {
                         for (Text.Line line : block.getLines()) {
@@ -39,7 +39,7 @@ public class OcrPlugin extends Plugin {
                     results.put("results", resultsArray);
                     call.resolve(results);
                 })
-                .addOnFailureListener(e -> call.reject("failure", e));
+                .addOnFailureListener((e) -> call.reject("failure", e));
         } catch (IOException e) {
             call.reject("error reading image", e);
         }
