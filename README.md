@@ -36,7 +36,12 @@ process(options: { image: string; }) => Promise<RecognitionResults>
 ```
 
 Process the text on the provided image.
-Only file urls (as the ones returned by Camera plugin) are supported at the moment.
+Can be a file URL (returned by Camera plugin by using CameraResultType.Uri)
+or a base64 data URL (returned by Camera plugin by using CameraResultType.DataUrl).
+
+Example:
+  { image: 'file:///path/to/image.jpg' }
+  { image: 'data:image/png;base64,iVBORw0KG...' }
 
 | Param         | Type                            |
 | ------------- | ------------------------------- |
